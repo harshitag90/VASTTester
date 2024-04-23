@@ -1,0 +1,32 @@
+<VAST version="3.0">
+  <Ad id="1">
+    <InLine>
+      <AdSystem>AdvancedAdSystem</AdSystem>
+      <AdTitle>Interactive Test Ad</AdTitle>
+      <Description>Interactive ad featuring VPAID content with customizable button colors.</Description>
+      <Impression><![CDATA[https://example.com/impression-tracking-url]]></Impression>
+      <Creatives>
+        <Creative id="1" sequence="1" AdID="12345">
+          <Linear>
+            <TrackingEvents>
+              <Tracking event="start"><![CDATA[http://example.com/tracking/start]]></Tracking>
+              <Tracking event="midpoint"><![CDATA[http://example.com/tracking/midpoint]]></Tracking>
+              <Tracking event="complete"><![CDATA[http://example.com/tracking/complete]]></Tracking>
+            </TrackingEvents>
+            <Duration>00:00:30</Duration>
+            <AdParameters><![CDATA[{"buttonForegroundColor": "white", "buttonBackgroundColor": "black"}]]></AdParameters>
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="application/javascript" apiFramework="VPAID" width="640" height="360">
+                <![CDATA[https://vasttester.iabtechlab.com/fixtures/vpaid/vpaid-example.js]]>
+              </MediaFile>
+            </MediaFiles>
+            <VideoClicks>
+              <ClickThrough><![CDATA[https://www.example.com]]></ClickThrough>
+              <ClickTracking><![CDATA[https://example.com/click-tracking-url]]></ClickTracking>
+            </VideoClicks>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
